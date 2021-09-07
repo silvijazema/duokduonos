@@ -1,0 +1,26 @@
+{
+  "name": "duokduonos",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000d\u0000u\u0000o\u0000k\u0000d\u0000u\u0000o\u0000n\u0000o\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvijazema/duokduonos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silvijazema/duokduonos/issues"
+  },
+  "homepage": "https://github.com/silvijazema/duokduonos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
