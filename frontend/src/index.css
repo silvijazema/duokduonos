@@ -135,7 +135,12 @@ h2 {
 
 /*rating*/
 
-.rating span {
-  color: #83c5be;
-  margin: 0.1rem
-} 
+.rating {
+  color: #40afb9;
+  
+}
+
+.rating i {
+  padding: 0.2em;
+  font-size: 1.1em;
+}

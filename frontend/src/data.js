@@ -29,7 +29,7 @@ const data = {
         image: '/images/p3.jpg',
         price: 3.5,
         brand: 'Silvija',
-        rating: 4.8,
+        rating: 1,
         numReviews: 17,
         description: 'high quality product',
       },
