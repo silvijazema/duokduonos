@@ -126,6 +126,7 @@ main {
 h1 {
   font-size: 2rem;
   padding: 1rem 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h2 {
@@ -143,4 +144,62 @@ h2 {
 .rating i {
   padding: 0.2em;
   font-size: 1.1em;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+button {
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+button:hover {
+  border: 0.1rem #404040 solid;
+}
+button.primary {
+  background-color: #83c5be;
+}
+button.block {
+  width: 100%;
+}
+
+.row.top {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+}
+
+img.large {
+  width: 80%;
+}
+
+.success {
+  color: #20a020;
+}
+.error {
+  color: #cf4848;
+  font-weight: 700;
+}
+
+.boxed-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
