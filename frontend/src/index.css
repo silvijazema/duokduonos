@@ -87,6 +87,11 @@ img.medium {
  width: 100%;
 }
 
+img.small {
+  max-width: 10rem;
+  width: 100%;
+}
+
 /* cards */
 .price {
 font-weight: 600;
@@ -146,7 +151,6 @@ h2 {
   font-size: 1.1em;
 }
 
-
 ul {
   padding: 0;
   margin: 0;
@@ -194,6 +198,10 @@ button.block {
   flex: 2 1 50rem;
 }
 
+.min-30 {
+  min-width: 30rem;
+}
+
 img.large {
   width: 80%;
 }
@@ -223,5 +231,14 @@ img.large {
 .alert-danger {
   color: #a02020;
   background-color: #ffe0e0;
+}
+
+.badge {
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
 }
 

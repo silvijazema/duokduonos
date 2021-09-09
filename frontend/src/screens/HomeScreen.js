@@ -5,8 +5,6 @@ import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
 
-
-
 export default function HomeScreen() {
   const dispatch = useDispatch();
 
@@ -16,8 +14,7 @@ const { loading, error, products } = productList;
 
   useEffect(() => {
 dispatch(listProducts());
-
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
@@ -27,10 +24,10 @@ dispatch(listProducts());
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <div className="row center">
-          {products.map((product) => (
+        { products.map((product) => (
                     <Product key={product._id} product={product}></Product>
-                    ))}
-                  </div>
+                    )) }
+        </div>
                 )}
     </div>
   );
