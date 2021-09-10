@@ -6,21 +6,23 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 
 export default function SigninScreen(props) {
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const redirect = props.location.search
-  ? props.location.search.split('=')[1]
-  : '/';
+    ? props.location.search.split('=')[1]
+    : '/';
 
-const userSignin = useSelector((state) => state.userSignin);
-const { userInfo, loading, error } = userSignin;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo, loading, error } = userSignin;
 
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(signin(email, password));
+
   };
 
   useEffect(() => {
@@ -35,14 +37,16 @@ const dispatch = useDispatch();
         <div>
           <h1>Prisijungti</h1>
         </div>
+
         {loading && <LoadingBox></LoadingBox>}
         {error && <MessageBox variant="danger">{error}</MessageBox>}
+
         <div>
-          <label htmlFor="email">El. paštas</label>
+          <label htmlFor="email">El. pašto adresas</label>
           <input
             type="email"
             id="email"
-            placeholder="Enter email"
+            
             required
             onChange={(e) => setEmail(e.target.value)}
           ></input>
@@ -52,7 +56,7 @@ const dispatch = useDispatch();
           <input
             type="password"
             id="password"
-            placeholder="Enter password"
+            
             required
             onChange={(e) => setPassword(e.target.value)}
           ></input>
@@ -60,13 +64,13 @@ const dispatch = useDispatch();
         <div>
           <label />
           <button className="primary" type="submit">
-            Sign In
+          Prisijungti
           </button>
         </div>
         <div>
           <label />
           <div>
-            New customer? <Link to="/register">Create your account</Link>
+           Naujas vartotojas <Link to="/register">Susisukrti paskyrą</Link>
           </div>
         </div>
       </form>
