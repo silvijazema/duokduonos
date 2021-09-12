@@ -28,6 +28,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "webpack": "^5.52.1"
   }
 }

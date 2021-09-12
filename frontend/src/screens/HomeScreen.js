@@ -4,6 +4,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
+import Slider from '../components/Slider';
 
 export default function HomeScreen() {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ dispatch(listProducts());
 
   return (
     <div>
+      <Slider/>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
