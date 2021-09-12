@@ -82,7 +82,7 @@ const addToCartHandler = () => {
                 <>
                 <li>
                   <div className="row">
-                    <div> Qty
+                    <div> Pasirinkite kiekį
                     </div>
                     <div>
                       <select value={qty}

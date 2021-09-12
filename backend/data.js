@@ -89,6 +89,28 @@ const data = {
         numReviews: 15,
         description: 'high quality product',
       },
+      {
+        _id: '7',
+        name: 'Naminė juoda duona',
+        category: 'Pants',
+        image: '/images/p7.jpg',
+        price: 2.5,
+        brand: 'kazkas',
+        rating: 2,
+        numReviews: 15,
+        description: 'high quality product',
+      },
+      {
+        _id: '7',
+        name: 'Kalėdiniai meduoliai',
+        category: 'Pants',
+        image: '/images/p8.jpg',
+        price: 1,
+        brand: 'kazkas',
+        rating: 3,
+        numReviews: 15,
+        description: 'high quality product',
+      },
     ],
   };
   export default data;

@@ -10,8 +10,10 @@ import SigninScreen from './screens/SigninScreen';
 function App() {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart; 
+
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
+
   const dispatch = useDispatch();
   const signoutHandler = () => {
     dispatch(signout());
@@ -54,13 +56,17 @@ function App() {
         </div>
       </header>
       <main>
+
+
+
+        <h1>blabalbla</h1>
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen}></Route>
         <Route path="/signin" component={SigninScreen}></Route>
         <Route path="/" component={HomeScreen} exact></Route>
         
       </main>
-      <footer className="row center">All right reserved</footer>
+      <footer className="row center">Visos teisės saugomos - SilvijaŽema 2021</footer>
     </div>
     </BrowserRouter>
   );
